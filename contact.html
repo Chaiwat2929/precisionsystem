@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ติดต่อเรา - บริษัท พรีซิชั่น ซิสเต็ม จำกัด</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    .topbar {
+      background-color: #2062a8;
+      color: white;
+      font-size: 0.9rem;
+      padding: 6px 0;
+    }
+    .topbar .social-icons img {
+      height: 20px;
+      margin-left: 10px;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #2062a8;
+    }
+    .section-title {
+      font-weight: 600;
+      color: #003c72;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .form-label {
+      font-weight: 500;
+    }
+    footer {
+      background-color: #f2f6fc;
+      color: #333;
+      padding: 40px 0 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer .footer-links {
+      margin-bottom: 15px;
+    }
+    footer .footer-links a {
+      margin: 0 10px;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .floating-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .floating-icons a {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: 0.3s ease;
+    }
+    .floating-icons a:hover {
+      transform: scale(1.1);
+    }
+    .floating-icons img {
+      width: 28px;
+      height: 28px;
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">PRECISION SYSTEM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">เกี่ยวกับเรา</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">ผลงานของเรา</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">บริการของเรา</a></li>
+        <li class="nav-item"><a class="nav-link" href="articles.html">บทความ</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">ติดต่อเรา</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">ติดต่อเรา</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">ชื่อ-นามสกุล</label>
+            <input type="text" class="form-control" id="name" placeholder="กรอกชื่อของคุณ" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">อีเมล</label>
+            <input type="email" class="form-control" id="email" placeholder="example@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+            <input type="tel" class="form-control" id="phone" placeholder="08xxxxxxxx" required>
+          </div>
+          <div class="mb-3">
+            <label for="service" class="form-label">บริการที่สนใจ</label>
+            <select class="form-select" id="service" required>
+              <option selected disabled>-- กรุณาเลือกบริการ --</option>
+              <option>บริการดูแลระบบไอที (IT Support)</option>
+              <option>ออกแบบและติดตั้งระบบเครือข่าย</option>
+              <option>ระบบสำรองข้อมูลและ Cloud</option>
+              <option>อบรม & ให้คำปรึกษา</option>
+              <option>ที่ปรึกษาด้านไอทีสำหรับองค์กร</option>
+              <option>รับทำเว็บไซต์ & ระบบหลังบ้าน</option>
+              <option>อื่นๆ</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">ข้อความเพิ่มเติม</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="พิมพ์ข้อความของคุณ..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">ส่งข้อความ</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h5 class="mb-3">ที่อยู่บริษัท</h5>
+        <p>บริษัท พรีซิชั่น ซิสเต็ม จำกัด</p>
+        <p>294/182 หมู่ที่ 7 ตำบลบึง อำเภอศรีราชา จ.ชลบุรี 20230</p>
+        <p><strong>เบอร์ติดต่อ:</strong> 096-836-1738</p>
+        <p><strong>เลขทะเบียน:</strong> 0205567014404</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="https://line.me/R/ti/p/@882fuzbs" target="_blank" class="btn btn-outline-success d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/color/24/line-me.png" alt="Line"> Line
+          </a>
+          <a href="https://m.me/PrecisionIT.Store" target="_blank" class="btn btn-outline-primary d-flex align-items-center gap-2">
+            <img src="https://img.icons8.com/color/24/facebook-messenger.png" alt="Messenger"> Facebook
+          </a>
+        </div>
+        <div class="mt-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4609.926237560491!2d101.01476897572425!3d13.07988161249368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102c713ea754345%3A0xa848ef9dc1c68211!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4nuC4o-C4teC4i-C4tOC4iuC4seC5iOC4mSDguIvguLTguKrguYDguJXguYfguKEg4LiI4Liz4LiB4Lix4LiU!5e1!3m2!1sen!2sth!4v1751622978192!5m2!1sen!2sth" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Toasts -->
+<div class="position-fixed top-0 start-50 translate-middle-x p-3 mt-4" style="z-index: 9999">
+  <div id="successToast" class="toast align-items-center text-bg-success border-0 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ ส่งข้อความสำเร็จแล้ว ขอบคุณที่ติดต่อเรา!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+  <div id="errorToast" class="toast align-items-center text-bg-danger border-0 shadow mt-2" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body" id="errorMessage">
+        ❌ กรุณากรอกข้อมูลให้ครบถ้วน
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="index.html">หน้าแรก</a>
+      <a href="services.html">บริการ</a>
+      <a href="articles.html">บทความ</a>
+      <a href="contact.html">ติดต่อ</a>
+    </div>
+    <div>© 2025 บริษัท พรีซิชั่น ซิสเต็ม จำกัด (PRECISION SYSTEM CO., LTD.)</div>
+  </div>
+</footer>
+
+<!-- Floating Icons -->
+<div class="floating-icons">
+  <a href="https://line.me/R/ti/p/@882fuzbs" target="_blank">
+    <img src="https://img.icons8.com/color/48/line-me.png" alt="Line">
+  </a>
+  <a href="https://m.me/PrecisionIT.Store" target="_blank">
+    <img src="https://img.icons8.com/fluency/48/facebook-messenger.png" alt="Messenger">
+  </a>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.querySelector("#name").value.trim();
+    const phone = document.querySelector("#phone").value.trim();
+    const email = document.querySelector("#email").value.trim();
+    const service = document.querySelector("#service").value;
+    const message = document.querySelector("#message").value.trim();
+
+    if (!name || !phone || !email || !service || service === "-- กรุณาเลือกบริการ --") {
+      showError("❌ กรุณากรอกข้อมูลให้ครบถ้วน");
+      return;
+    }
+
+    const data = { name, phone, email, service, message };
+
+    try {
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (res.ok) {
+        const toast = new bootstrap.Toast(document.getElementById("successToast"));
+        toast.show();
+        e.target.reset();
+      } else {
+        showError("❌ เกิดข้อผิดพลาดในการส่งข้อมูล");
+      }
+    } catch (error) {
+      showError("❌ ไม่สามารถเชื่อมต่อเซิร์ฟเวอร์ได้");
+      console.error("Error:", error);
+    }
+  });
+
+  function showError(message) {
+    const errorEl = document.getElementById("errorMessage");
+    errorEl.textContent = message;
+    const toast = new bootstrap.Toast(document.getElementById("errorToast"));
+    toast.show();
+  }
+</script>
+
+</body>
+</html>
